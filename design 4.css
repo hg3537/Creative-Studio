@@ -885,6 +885,10 @@ input {
     .contact {
         padding: 15px 0 !important;
     }
+    
+.header-landing {
+            display: none !important;
+    }
 }
 
 @media (max-width:800px) {
