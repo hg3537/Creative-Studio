@@ -304,6 +304,8 @@ a {
     border: 2px solid var(--darkprimary);
     border-radius: 50%;
     transition: var(--main-transition) ease;
+        width: 150px;
+    height: 150px;
 }
 
 .r-anmation:hover {
