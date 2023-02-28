@@ -458,6 +458,7 @@ a {
 }
 
 .text-portofilio-img a {
+        display: inline-block;
     font-size: 16px;
     padding: 10px;
     text-align: center;
@@ -468,6 +469,9 @@ a {
     transition: var(--main-transition);
 }
 
+.text-portofilio-img a i{
+        display: inline-block;
+}
 .text-portofilio-img a:hover {
     color: var(--primary);
     background-color: var(--light);
