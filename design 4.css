@@ -882,6 +882,9 @@ input {
 
 
     }
+    .contact {
+        padding: 15px 0 !important;
+    }
 }
 
 @media (max-width:800px) {
@@ -908,7 +911,6 @@ input {
     .service,
     .portfolio,
     .team,
-    .contact,
     .contact-cont {
         padding: 15px 0 !important;
     }
