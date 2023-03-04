@@ -299,7 +299,9 @@ a {
 }
 
 .we-see-card-small {
-    text-align: center;
+      display: flex;
+            flex-direction: column;
+            align-items: center;
     padding: 22px;
     border: 2px solid var(--darkprimary);
     border-radius: 50%;
@@ -889,6 +891,9 @@ input {
 .header-landing {
             display: none !important;
     }
+    .about-text {
+    width: auto !important;
+        margin: 10px;}
 }
 
 @media (max-width:800px) {
