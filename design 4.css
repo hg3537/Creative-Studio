@@ -355,12 +355,16 @@ a {
     gap: 30px;
 
 }
+.service{
+    background: #c2baba75;
+}
 
 .service-card {
     text-align: center;
-    box-shadow: rgb(0 0 0 / 5%) 0px 6px 8px 0;
-    padding: 10px 0 15px;
-    position: relative;
+        box-shadow: rgb(1 1 1 / 50%) 0px 6px 8px 0;
+        padding: 10px 0 15px;
+        position: relative;
+        background: white;
 }
 
 .service-card::after,
