@@ -371,7 +371,7 @@ a {
 .service-card::before {
     content: "";
     position: absolute;
-    width: 2px;
+    width: 4px;
     height: 0%;
     background-color: var(--darkprimary);
     transition: .9s;
