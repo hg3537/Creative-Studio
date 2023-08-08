@@ -61,7 +61,7 @@ a {
 
 /* start landing */
 .landing {
-    min-height: 750px;
+    min-height:100vh;
     background-image: url(landing.jpg);
     background-size: cover;
     display: flex;
@@ -196,6 +196,27 @@ h1 :has(.changed-text) {
 }
 
 
+.top {
+    color: wheat;
+    background: #ff2123;
+    border-radius: 5px;
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+    top: calc(100vh - 90px);
+    z-index: 120;
+    height: 50px;
+    display: none;
+    transform: translateX(-70px);
+    transition: var(--main-transition) all ease;
+}
+.d-block{
+    display: block;
+    transform: translateX(0px);
+}
+.top i {
+    color: wheat;
+}
 /* end landing */
 .box-landing {
     display: grid;
