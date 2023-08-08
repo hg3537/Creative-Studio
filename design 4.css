@@ -55,7 +55,7 @@ a {
     --secondary: #6c757d;
     --white: #fff;
     --light: #f8f9fa;
-    --main-transition: 0.4s all ease;
+    --main-transition: 0.4s ;
     scroll-behavior: smooth;
 }
 
