@@ -46,3 +46,7 @@ setInterval(() =>
 {
     changingtext();
 }, 4000);
+window.addEventListener(`scroll`, () =>
+{
+    document.querySelector(`.top`).classList.toggle(`d-block`,window.scrollY > 400)
+})
