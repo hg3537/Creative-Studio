@@ -82,6 +82,7 @@ a {
     position: fixed;
     width: 100%;
     box-shadow: 0 0.125rem 0.5rem #e4e4e4;
+    filter: brightness(0.885);
 }
 
 
@@ -174,7 +175,7 @@ flex-direction: column !important;
 }
 
 .landing-but a:first-child {
-    background-color: var(--primary);
+    background-color:#222;
 }
 
 .landing-but a:last-child {
@@ -182,7 +183,7 @@ flex-direction: column !important;
 }
 
 .landing-but a:last-child:hover {
-    background: var(--primary);
+    background: #222;
     border-color: var(--primary);
 }
 
