@@ -218,6 +218,33 @@ h1 :has(.changed-text) {
 .top i {
     color: wheat;
 }
+.changed-text {
+    position: relative;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.changed-text::after {
+    content: "";
+    width: 6px;
+    height: 70%;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--light);
+    animation: blink infinite .6s;
+}
+
+.changed-text.blank::after {
+    animation: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
 /* end landing */
 .box-landing {
     display: grid;
