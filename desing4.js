@@ -25,28 +25,39 @@ ulheaderitems.forEach(e =>
         document.querySelector(`.ul-links-header`).classList.remove(`toggel-ul-links-header`);
     });
 });
-let changedtext = document.querySelector(`.changed-text`);
-function changingtext ()
-{
-    setTimeout(() =>
-    {
-        changedtext.textContent = ` Studio`;
-    }, 0);
-    setTimeout(() =>
-{
-        changedtext.innerHTML = `<span class="changed-text colormain"> Team</span>`;
-    }, 2000);
-    setTimeout(() =>
-    {
-        changedtext.textContent = ` Minds`;
-    }, 4000);
-}
-changingtext();
-setInterval(() =>
-{
-    changingtext();
-}, 4000);
+
 window.addEventListener(`scroll`, () =>
 {
     document.querySelector(`.top`).classList.toggle(`d-block`,window.scrollY > 400)
 })
+// change the text
+let changedtext = document.querySelector(`.changed-text`);
+const wordschanging = [ ` Minds`, ` Studio`, ` Team` ];
+let wordindex = 0;
+let charindex = 0;
+let isdelat = false;
+function changetext ()
+{
+    let currntword = wordschanging[ wordindex ];
+    let currntchar = currntword.substring(0, charindex);
+    changedtext.textContent = currntchar;
+    changedtext.classList.add(`blink`)
+    if (!isdelat && charindex < currntword.length)
+    {
+        charindex++;
+        setTimeout(changetext, 200);
+    }
+    else if (isdelat && charindex > 0)
+    {
+        charindex--;
+        setTimeout(changetext, 100);
+    }
+    else
+    {
+        changedtext.classList.remove(`blink`)
+        isdelat = !isdelat;
+        wordindex = !isdelat ? (wordindex + 1) % wordschanging.length : wordindex;
+        setTimeout(changetext, 1200);
+    }
+}
+changetext();
